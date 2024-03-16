@@ -24,7 +24,7 @@ export default function AllPlants() {
     useEffect(()=>{
          const fetchdata= async()=>{
             try{
-                const response=await axios.get(`https://perenual.com/api/species-list?key=sk-65QH65f557794d7294753&page=${pageno}`);
+                const response=await axios.get(`https://perenual.com/api/species-list?key=sk-vFqJ65f5a9697b1604754&page=${pageno}`);
                
                     console.log(response);
                   setdata(response.data.data);

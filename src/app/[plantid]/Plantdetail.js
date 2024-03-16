@@ -9,7 +9,7 @@ export default function Plantdetail({ plantid }) {
     useEffect(() => {
         const fetchdata = async () => {
             try {
-                const response = await axios.get(`https://perenual.com/api/species/details/${plantid}?key=sk-65QH65f557794d7294753`);
+                const response = await axios.get(`https://perenual.com/api/species/details/${plantid}?key=sk-vFqJ65f5a9697b1604754`);
                 console.log(response.data.default_image);
                 setDetails(response?.data);
             } catch (error) {
