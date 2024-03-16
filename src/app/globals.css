@@ -31,3 +31,9 @@ body {
     text-wrap: balance;
   }
 }
+
+.bg-custom {
+  @apply bg-cover bg-center;
+  background-image: url('/public/Bg-plant.jpg');
+}
+

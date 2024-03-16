@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Toogle from './Toogle';
 import { motion } from "framer-motion";
 import { FaBars, FaTimes } from 'react-icons/fa';
+import  {NavLink} from 'react-dom'
 import Welcome from './Welcome';
 const variants = {
   open: { opacity: 1, x: 0 },
@@ -18,7 +19,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className='flex flex-col text-black w-full justify-between items-center px-10 py-10 bg-white'>
+    <div className='flex flex-col sticky top-0 text-black w-full justify-between items-center z-50 px-10 py-10 bg-gray-50'>
       <div className='flex flex-row justify-between items-center w-full'>
         <div className='drop-shadow-sm text-4xl hover:cursor-pointer' style={{textShadow:'1px 1px 1px green'}}>PLANTOPIA</div>
         <div className='hidden w-1/2 justify-around items-center lg:flex xl:flex '>
