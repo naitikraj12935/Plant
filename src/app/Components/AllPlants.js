@@ -6,6 +6,7 @@ import { useState } from 'react'
 import PlantCard from './Card'
 import { SlArrowRight } from "react-icons/sl";
 import { SlArrowLeft } from "react-icons/sl";
+import { naitikraj } from '../Config'
 export default function AllPlants() {
     const [data,setdata]=useState([]);
     const [err,seterr]=useState('');
@@ -24,7 +25,7 @@ export default function AllPlants() {
     useEffect(()=>{
          const fetchdata= async()=>{
             try{
-                const response=await axios.get(`https://perenual.com/api/species-list?key=sk-vFqJ65f5a9697b1604754&page=${pageno}`);
+                const response=await axios.get(`https://perenual.com/api/species-list?key=${naitikraj}&page=${pageno}`);
                
                     console.log(response);
                   setdata(response.data.data);

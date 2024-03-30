@@ -1,0 +1,1 @@
+export const naitikraj='sk-YVkj6604f2df86ba64753'

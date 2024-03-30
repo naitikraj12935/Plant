@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { FaBars, FaTimes } from 'react-icons/fa';
 import  {NavLink} from 'react-dom'
 import Welcome from './Welcome';
+import Link from 'next/link';
 const variants = {
   open: { opacity: 1, x: 0 },
   closed: { opacity: 0, x: "-100%" },
@@ -23,7 +24,7 @@ export default function Navbar() {
       <div className='flex flex-row justify-between items-center w-full'>
         <div className='drop-shadow-sm text-4xl hover:cursor-pointer' style={{textShadow:'1px 1px 1px green'}}>PLANTOPIA</div>
         <div className='hidden w-1/2 justify-around items-center lg:flex xl:flex '>
-          <div className='hover:cursor-pointer'>Home</div>
+          <div className='hover:cursor-pointer'><Link href="/">Home</Link></div>
           <div className='hover:cursor-pointer'>About</div>
           <div>
             <button className='bg-green-300 p-2 rounded-xl hover:scale-90'>
