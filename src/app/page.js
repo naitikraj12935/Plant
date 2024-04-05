@@ -3,6 +3,8 @@ import Navbar from "./Components/Nevbar";
 import Input from "./Components/Input";
 import Test from "./Components/Card";
 import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
 import "./globals.css";
 import AllPlants from "./Components/AllPlants";
 export default function Home() {
@@ -24,7 +26,9 @@ export default function Home() {
           </li>
         ))}
       </ul>
-      
+      <Link href="/Cam">
+      <Image src="/Camera.png" height={75} width={75} alt="camera" className="fixed bottom-4 p-auto"/>
+      </Link>
     </div>
   );
 }
